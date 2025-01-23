@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Paulie's Perch's</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    
+</head>
+<body>
+    <header>
+        <!-- Top navigation -->
+        <div class="topnav">
+
+            <!-- Centered link -->
+            <div class="topnav-centered Navbrand">
+                <a href="#home" ><img class="brandImg" src="resources\PauliesPerch.png" alt="Alternate Text" /></a>
+            </div>
+
+            <!-- Left-aligned links (default) -->
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+                <a href="Home/Flock">Meet the Flock</a>
+                <a href="#about">Meet the Artist</a>
+            </div>
+
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Website - This website is a <a href="https://harvestmint.github.io/"><img src="https://harvestmint.github.io/pixil-frame-0.png" height="32" width="96" /></a> production.
+        </div>
+    </footer>
+ 
+</body>
+</html>
